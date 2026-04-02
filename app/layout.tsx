@@ -54,7 +54,7 @@ export default function RootLayout({
       >
         <div className="cosmic-rotating-bg" />
         {/* 星星背景装饰 */}
-        <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="fixed inset-0 overflow-hidden pointer-events-none z-10">
           {STAR_STYLES.map((style, i) => (
             <div
               key={i}
@@ -63,7 +63,7 @@ export default function RootLayout({
             />
           ))}
         </div>
-        <div className="relative z-10">
+        <div className="relative z-20">
           {children}
         </div>
       </body>
