@@ -18,7 +18,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center p-8 overflow-hidden">
+    <div className="relative min-h-dvh flex flex-col items-center justify-center p-8 pb-[max(2rem,env(safe-area-inset-bottom))] overflow-hidden">
       {/* 装饰光效 */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[128px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-[128px] pointer-events-none" />
@@ -124,7 +124,7 @@ export default function Home() {
       </main>
 
       {/* 底部装饰 */}
-      <footer className="absolute bottom-6 text-purple-400/30 text-xs tracking-[0.2em] font-light">
+      <footer className="absolute bottom-[max(1.5rem,env(safe-area-inset-bottom))] text-purple-400/30 text-xs tracking-[0.2em] font-light">
         命运在等待你的召唤
       </footer>
 

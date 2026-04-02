@@ -31,7 +31,7 @@ body {
   background: radial-gradient(circle at center top, #2D1B4E 0%, #0F0518 100%);
   color: var(--foreground);
   font-family: var(--font-geist-sans), sans-serif;
-  min-height: 100vh;
+  min-height: 100dvh;
   overflow-x: hidden;
 }
 
