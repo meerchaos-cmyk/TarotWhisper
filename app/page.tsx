@@ -47,7 +47,7 @@ export default function Home() {
       </Link>
 
       {/* 主要内容 */}
-      <main className="flex flex-col items-center text-center max-w-4xl z-10">
+      <main className="flex flex-col items-center justify-center text-center max-w-4xl w-full flex-1 z-10 py-12">
         
         {/* Logo/Icon */}
         <div className="mb-8 relative animate-float">
