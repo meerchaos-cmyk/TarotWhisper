@@ -50,8 +50,9 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} antialiased min-h-dvh`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} antialiased min-h-svh`}
       >
+        <div className="cosmic-rotating-bg" />
         {/* 星星背景装饰 */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
           {STAR_STYLES.map((style, i) => (

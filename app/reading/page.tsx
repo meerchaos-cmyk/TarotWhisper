@@ -51,7 +51,7 @@ export default function ReadingPage() {
     : (phase === 'reveal' ? 3 : 0);
 
   return (
-    <div className="relative min-h-dvh box-border flex flex-col">
+    <div className="relative min-h-svh box-border flex flex-col">
       <div className="absolute inset-0 bg-[#0B0614]/45 pointer-events-none z-0" />
 
       {/* 顶部导航 - Sanctuary Header */}
@@ -119,7 +119,7 @@ export default function ReadingPage() {
       </header>
 
       {/* Main Content Area */}
-      <main className="relative z-10 flex-1 flex flex-col items-center justify-center p-6 pt-24 min-h-dvh">
+      <main className="relative z-10 flex-1 flex flex-col items-center justify-center p-6 pt-24 min-h-svh">
         
         {/* Phase: Question */}
         {phase === 'question' && (
