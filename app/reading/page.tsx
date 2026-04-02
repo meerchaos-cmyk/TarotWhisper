@@ -51,7 +51,9 @@ export default function ReadingPage() {
     : (phase === 'reveal' ? 3 : 0);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#1A0B2E] via-[#0F0518] to-[#0F0518] bg-fixed">
+    <div className="relative min-h-svh box-border flex flex-col">
+      <div className="absolute inset-0 bg-[#0B0614]/45 pointer-events-none z-0" />
+
       {/* 顶部导航 - Sanctuary Header */}
       <header className="fixed top-0 w-full z-50 flex items-center justify-between px-8 py-6 bg-gradient-to-b from-[#0F0518] to-transparent pointer-events-none">
         <Link
@@ -117,7 +119,7 @@ export default function ReadingPage() {
       </header>
 
       {/* Main Content Area */}
-      <main className="flex-1 flex flex-col items-center justify-center p-6 pt-24 min-h-screen">
+      <main className="relative z-10 flex-1 flex flex-col items-center justify-center p-6 pt-24 min-h-svh">
         
         {/* Phase: Question */}
         {phase === 'question' && (
