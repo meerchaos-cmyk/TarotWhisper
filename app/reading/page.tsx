@@ -52,6 +52,7 @@ export default function ReadingPage() {
 
   return (
     <div className="relative min-h-svh box-border flex flex-col">
+      <div className="fixed inset-0 md:hidden bg-[url('/pbg.webp')] bg-cover bg-center pointer-events-none z-0" />
       <div className="absolute inset-0 bg-[#0B0614]/45 pointer-events-none z-0" />
 
       {/* 顶部导航 - Sanctuary Header */}
