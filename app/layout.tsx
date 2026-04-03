@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Cinzel } from "next/font/google";
 import type { CSSProperties } from "react";
+import { BackgroundMusic } from "@/components/BackgroundMusic";
 import "./globals.css";
 
 const STAR_COUNT = 50;
@@ -53,6 +54,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} antialiased min-h-svh`}
       >
         <div className="cosmic-rotating-bg" />
+        <BackgroundMusic />
         {/* 星星背景装饰 */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-10">
           {STAR_STYLES.map((style, i) => (
